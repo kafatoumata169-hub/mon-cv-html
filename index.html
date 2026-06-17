@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cv-container">
+
+        <img src="ma-photo.jpg" alt="ma-photo.jpg" width="200" height="200">
+
+        <h1>Fatoumata Ka</h1>
+        <p class="metier">Etudiante en licence2 informatique</p>
+        <p>Développeuse web débutante</p>
+
+        <button onclick="bonjour()">Clique ici</button>
+
+        <p id="message"></p>
+        <section>
+            <h2>À propos</h2>
+            <p>
+                Passionnée par l'informatique et le développement web.
+            </p>
+            <h2>competance lingustique</h2>
+            <p>français parler,lire,écrire <br>
+            anglais parler,lire,ecrire<br></p>
+            
+        </section>
+
+        <section>
+            <h2>Compétences</h2>
+        <p>
+            <button onclick="afficherCompetences()">voir mes Compétences en langage informatique </button> 
+            <div id="resultat"></div>
+        </p>
+         <p>travail en équipe <br>
+           sens du relationnel <br> </p>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <p>Étudiante en informatique</p>
+            <p>baccalauréat scientifique au lycée d'enseignement general de Diourbel</p>
+        </section>
+        <section id="experience">
+    <h2>Expérience Professionnelle</h2>
+
+    <div class="experience">
+        <h3>Projets Académiques en Informatique</h3>
+        <p><strong>2025 - Présent</strong></p>
+        <ul>
+            <li>Développement de programmes en langage C.</li>
+            <li>Conception d'algorithmes récursifs et itératifs.</li>
+            <li>Création de pages web en HTML, CSS et JavaScript.</li>
+            <li>Réalisation de projets pratiques dans le cadre de la formation.</li>
+            <li>Utilisation de Git et GitHub pour la gestion de versions.</li>
+        </ul>
+    </div>
+
+    <div class="experience">
+        <h3>Projet Personnel : CV Web Interactif</h3>
+        <p><strong>2026</strong></p>
+        <ul>
+            <li>Création d'un CV numérique moderne.</li>
+            <li>Intégration de compétences avec affichage en pourcentage.</li>
+            <li>Développement de fonctionnalités en JavaScript.</li>
+            <li>Mise en ligne et gestion du projet avec GitHub.</li>
+        </ul>
+    </div>
+</section>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
