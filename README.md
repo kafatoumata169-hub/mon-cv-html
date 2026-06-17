@@ -1,6 +1,6 @@
 # 📄 Mon CV HTML - CV Web Interactif
 
-Un CV numérique moderne et interactif créé en **HTML**, **CSS** et **JavaScript**. Ce projet démontre mes compétences en développement web avec une interface élégante et des fonctionnalités dynamiques.
+Un CV numérique moderne et interactif créé en **HTML**, **CSS** et **JavaScript**. Ce projet démontre mes compétences en développement web avec une interface élégante et des fonctionnalités interactives.
 
 ## 🎯 À propos
 
@@ -120,6 +120,16 @@ Le CV utilise une palette de couleurs professionnelle :
 
 [Voir le CV sur GitHub](https://github.com/kafatoumata169-hub/mon-cv-html)
 
+## 📱 Code QR
+
+Scannez ce code QR pour accéder directement au projet :
+
+![QR Code - Mon CV HTML](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/kafatoumata169-hub/mon-cv-html)
+
+**Accès rapide :** [https://github.com/kafatoumata169-hub/mon-cv-html](https://github.com/kafatoumata169-hub/mon-cv-html)
+
+> 💡 *Utilisez votre téléphone pour scanner ce code QR et partagez facilement votre profil avec d'autres !*
+
 ## 👩‍💻 Auteur
 
 **Fatoumata Ka**
@@ -129,9 +139,3 @@ Le CV utilise une palette de couleurs professionnelle :
 ---
 
 *Ce CV a été créé comme projet personnel pour démontrer mes compétences en développement web.*
-[16:10, 17/06/2026] Fatima KA: ## 📱 QR Code
-
-Scannez ce code pour voir mon projet :
-
-![Mon QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/kafatoumata169-hub/mon-cv-html)
-[16:13, 17/06/2026] Fatima KA: ✅ *Interactivité* : Boutons et animations JavaScript
