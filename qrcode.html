@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code - Mon CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .qr-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .qr-container h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .qr-container p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        #qrcode {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .cv-preview {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .cv-preview h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .cv-preview img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 10px 0;
+            border: 3px solid #667eea;
+        }
+
+        .cv-info {
+            text-align: left;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .cv-info p {
+            margin: 5px 0;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5568d3;
+        }
+
+        button.secondary {
+            background-color: #764ba2;
+        }
+
+        button.secondary:hover {
+            background-color: #63398a;
+        }
+
+        .link-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f4f8;
+            border-radius: 8px;
+            color: #0066cc;
+            font-size: 13px;
+            word-break: break-all;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-info:hover {
+            background-color: #d0e8f0;
+        }
+
+        @media (max-width: 600px) {
+            .qr-container {
+                padding: 20px;
+            }
+
+            .qr-container h1 {
+                font-size: 22px;
+            }
+
+            #qrcode {
+                margin: 20px 0;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="qr-container">
+        <h1>📱 Mon CV</h1>
+        <p>Scannez le code QR ci-dessous pour accéder à mon CV</p>
+
+        <div id="qrcode"></div>
+
+        <div class="cv-preview">
+            <h3>Aperçu du CV</h3>
+            <img src="ma-photo.jpg" alt="Fatoumata Ka">
+            <div class="cv-info">
+                <p><strong>Fatoumata Ka</strong></p>
+                <p>Étudiante en licence 2 informatique</p>
+                <p>Développeuse web débutante</p>
+                <p>📍 Passionnée par l'informatique et le développement web</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="telechargerQR()">📥 Télécharger le QR Code</button>
+            <button class="secondary" onclick="copierLien()">🔗 Copier le lien</button>
+        </div>
+
+        <div class="link-info" onclick="copierLien()">
+            Cliquez ici pour copier le lien vers votre CV
+        </div>
+    </div>
+
+    <!-- Bibliothèque QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <script>
+        // URL de votre CV (à adapter selon où vous hébergez votre site)
+        // Si votre site est hébergé sur GitHub Pages, ce sera quelque chose comme:
+        // const urlCV = "https://kafatoumata169-hub.github.io/mon-cv-html/";
+        
+        // Pour l'instant, on utilise le chemin relatif
+        const urlCV = window.location.origin + "/mon-cv-html/";
+
+        // Générer le QR Code
+        function genererQRCode() {
+            // Effacer le contenu précédent
+            document.getElementById("qrcode").innerHTML = "";
+            
+            // Créer le QR Code
+            new QRCode(document.getElementById("qrcode"), {
+                text: urlCV,
+                width: 250,
+                height: 250,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        }
+
+        // Télécharger le QR Code
+        function telechargerQR() {
+            const canvas = document.querySelector("#qrcode canvas");
+            if (canvas) {
+                const link = document.createElement("a");
+                link.href = canvas.toDataURL("image/png");
+                link.download = "mon-cv-qrcode.png";
+                link.click();
+                alert("✅ QR Code téléchargé avec succès!");
+            } else {
+                alert("❌ Veuillez d'abord générer le QR Code");
+            }
+        }
+
+        // Copier le lien vers le presse-papiers
+        function copierLien() {
+            navigator.clipboard.writeText(urlCV).then(() => {
+                alert("✅ Lien copié dans le presse-papiers!");
+            }).catch(err => {
+                alert("❌ Erreur lors de la copie: " + err);
+            });
+        }
+
+        // Générer le QR Code au chargement de la page
+        window.addEventListener("DOMContentLoaded", genererQRCode);
+    </script>
+
+</body>
+</html>
