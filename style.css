@@ -65,7 +65,7 @@ background-image: url("images/photo.jpg");
 .barre{
     width: 100%;
     height: 20px;
-    background-color: #ddd;
+    background-color: #9498bb8bb;
     border-radius: 10px;
 }
 
@@ -115,4 +115,30 @@ background-image: url("images/photo.jpg");
 
 .experience ul {
     padding-left: 20px;
+}
+.footer {
+    background-color: #91a2da;
+    color: black(209, 166, 155);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.profil {
+    display: flex;
+    align-items: center; /* aligne verticalement */
+    gap: 15px; /* espace entre la photo et le nom */
+}
+
+.profil img {
+    width: 200px;
+    height: 200px;
+ .profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: lightblue; /* couleur de fond */
+    padding: 20px;              /* espace intérieur */
+    border-radius: 10px;        /* coins arrondis */
+}   border-radius: 50%; /* photo ronde */
 }
