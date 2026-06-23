@@ -224,7 +224,7 @@ html {
 }
 
 .sidebar{
-    width:30%;
+    width:40%;
     background:#3f4758;
     color:white;
     padding:30px;
@@ -232,7 +232,7 @@ html {
 
 
 .content{
-    width:70%;
+    width:60%;
     padding:40px;
     background:grey;
 }
