@@ -59,7 +59,7 @@ function bonjour() {
 
     let message = document.getElementById("message");
 
-    message.innerHTML = "✨ Merci de visiter mon CV ✨";
+    message.innerHTML = "Merci de visiter mon CV ";
 
     message.style.color = "blue";
     message.style.fontSize = "25px";
@@ -78,5 +78,54 @@ document.addEventListener("DOMContentLoaded", () => {
             exp.style.opacity = "1";
             exp.style.transform = "translateY(0)";
         }, index * 400);
+    });
+});
+// Récupérer le bouton
+const backToTopButton = document.getElementById("backToTop");
+
+// Écouter le défilement de la page
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  // Affiche le bouton si on a défilé de plus de 20px
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Action lors du clic : retour en haut fluide
+backToTopButton.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // Animation de défilement fluide
+  });});
+  // Mode sombre / clair
+const themeBtn = document.getElementById("theme-btn");
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+}
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+});
+
+liens.forEach(lien => {
+    lien.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        // Cacher toutes les sections
+        sections.forEach(section => {
+            section.style.display = "none";
+        });
+
+        // Afficher la section cliquée
+        const cible = this.getAttribute("href");
+        document.querySelector(cible).style.display = "block";
     });
 });
