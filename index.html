@@ -7,38 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <header>
+      <nav class="navbar">
 
+        <button id="menu-btn">☰</button>
+ 
+        <ul id="menu">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-btn">🌙</button>
+      </nav>
+      
+    </header>
     <div class="cv-container">
-        <div class="profil"><img src="ma-photo.jpg" alt="ma-photo.jpg" width="200" height="200" ><h1>Fatoumata Ka</h1>
+     <aside class="sidebar">
+        <div class="profil"><img src="ma-photo.jpg" alt="ma-photo.jpg" width="200" height="200" >
         </div>
-        <p class="metier">Etudiante en licence2 informatique</p>
+        
+        <h1 class="metier">Fatoumata KA</h1>
         <p>Développeuse web débutante</p>
-        <section>
-            <h2>À propos</h2>
-            <p>
-                Passionnée par l'informatique et le développement web.
+        <section id="profil">
+            <h2>profil</h2>
+              <ol><ul> Etudiante en licence2 informatique Passionnée par  l'informatique , le développement web et la cybersécurité<br>
+              </ul>
+            </ol>
             </p>
-            <h2>competance lingustique</h2>
+            <h2>competances lingustiques</h2>
             <p><i>français</i> : (parler,lire,écrire) <br></p>
             <p><i>anglais</i> :  (parler,lire,ecrire)<br></p>
             <p><i>allemand</i>:  (lire)</p>
         </section>
 
-        <section>
+        <section id="competences">
             <h2>Compétences</h2>
-        <p>
+        <ul>
             <button onclick="afficherCompetences()">voir mes Compétences en langage informatique </button> 
-            <div id="resultat"></div>
-        </p>
+            <ol id="resultat"></ol>
+        </ul>
          <p>travail en équipe <br>
             <br>
            sens du relationnel <br> </p>
         </section>
-
-        <section>
+    </aside>
+        <main class="content">
+        <section id="formation">
             <h2>Formation</h2>
             <p>Étudiante en informatique</p>
-            <p>baccalauréat scientifique au lycée d'enseignement general de Diourbel</p>
+            <p>baccalauréat scientifique au lycée d'enseignement general de Diourbel <br>Brevet de fin d'etudes moyennes au CEM  Ndiourbel Tock de DIOURBELs</p>
         </section>
         <section id="experience">
     <h2>Expérience Professionnelle</h2>
@@ -69,10 +88,14 @@
        <button onclick="bonjour()">Clique ici</button>
 
         <p id="message"></p> 
+        <!-- Bouton Retour en haut -->
+      <button id="backToTop" title="Retour en haut">↑</button>
+
         <footer class="footer">
     <p>&copy; <mail:kafatoumata></mail:kafatoumata>kafatoumata169@gmail.com</p>
-    <p>contact: 766820279</p>
+    <p id="contact">contact: 766820279</p>
 </footer>
+ </main>
     </div>
     <script src="script.js"></script>
 </body>
