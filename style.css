@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .cv-container {
@@ -23,7 +23,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 .metier {
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-    color: #444;
+    color: white;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
@@ -117,7 +117,7 @@ background-image: url("images/photo.jpg");
     padding-left: 20px;
 }
 .footer {
-    background-color: #91a2da;
+    background-color: white;
     color: black(209, 166, 155);
     text-align: center;
     padding: 15px;
@@ -141,4 +141,102 @@ background-image: url("images/photo.jpg");
     padding: 20px;              /* espace intérieur */
     border-radius: 10px;        /* coins arrondis */
 }   border-radius: 50%; /* photo ronde */
+}
+/* Défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 15px;
+}
+
+.navbar h2 {
+    color: rgb(90, 98, 211);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: rgb(41, 98, 204);
+    text-decoration: none;
+}
+
+#menu-btn,
+#theme-btn {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: rgb(75, 77, 201);
+}
+
+.dark-mode .navbar {
+    background-color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: #2c3e50;
+        padding: 10px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    #menu-btn {
+        display: none;
+    }
+}
+
+
+
+
+.cv-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:30%;
+    background:#3f4758;
+    color:white;
+    padding:30px;
+}
+
+
+.content{
+    width:70%;
+    padding:40px;
+    background:grey;
+}
+#formation{
+    background-color:white ;
+    align-items: center;
 }
