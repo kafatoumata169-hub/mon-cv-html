@@ -1,141 +1,68 @@
-# 📄 Mon CV HTML - CV Web Interactif
+# 📄 CV Interactif - Fatoumata KA
 
-Un CV numérique moderne et interactif créé en **HTML**, **CSS** et **JavaScript**. Ce projet démontre mes compétences en développement web avec une interface élégante et des fonctionnalités interactives.
+Bienvenue sur mon projet de CV interactif réalisé en HTML, CSS et JavaScript.
 
-## 🎯 À propos
+## 👩‍💻 À propos
 
-Ce CV web interactif présente :
-- **Profil professionnel** : Étudiante en Licence 2 Informatique
-- **Compétences** : Développement web, programmation (C, Java, JavaScript)
-- **Formation** : Baccalauréat scientifique et études informatiques
-- **Expérience** : Projets académiques et projets personnels en développement web
+Je suis Fatoumata KA, étudiante en Licence 2 Informatique à l'Université Iba Der Thiam de Thiès, passionnée par le développement web et la cybersécurité.
+
+## 🚀 Technologies utilisées
+
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
 
 ## ✨ Fonctionnalités
 
-- ✅ **Design responsive** : Interface adaptée à tous les appareils
-- ✅ **Interactivité** : Boutons et animations JavaScript
-- ✅ **Affichage dynamique des compétences** : Barres de progression avec pourcentages
-- ✅ **Animations élégantes** : Transitions sur les sections expérience
-- ✅ **Photo de profil** : Intégration d'une image personnelle
-- ✅ **Message de bienvenue** : Interaction utilisateur avec changement de couleur de fond
+- Affichage de mon profil professionnel
+- Présentation de ma formation académique
+- Liste de mes compétences techniques
+- Affichage des langues parlées
+- Navigation interactive entre les différentes sections
+- Design moderne et responsive
 
-## 🛠️ Technologie utilisées
+## 📚 Formation
 
-| Technologie | Utilisation |
-|---|---|
-| **HTML5** | Structure et sémantique |
-| **CSS3** | Stylisation et responsive design |
-| **JavaScript** | Interactions et animations dynamiques |
-| **Git/GitHub** | Gestion de version |
+- Licence 2 Informatique
+- Baccalauréat Scientifique
+- BFEM
 
-## 📂 Structure du projet
+## 🛠️ Compétences
 
-```
-mon-cv-html/
-├── index.html       # Page principale du CV
-├── style.css        # Feuille de styles
-├── script.js        # Logique interactive
-├── ma-photo.jpg     # Photo de profil
-└── README.md        # Documentation (ce fichier)
-```
+- HTML
+- CSS
+- JavaScript
+- Langage C
+- Git et GitHub
 
-## 🚀 Fonctionnalités interactives
+## 🌍 Langues
 
-### 1. **Bouton de bienvenue**
-- Clique sur le bouton "Clique ici" pour afficher un message de bienvenue
-- Change la couleur de fond de la page
+- Français
+- Anglais
+- Allemand
+- Poulard
 
-### 2. **Affichage des compétences**
-- Clic sur le bouton "Voir mes Compétences en langage informatique"
-- Affiche une liste de compétences avec barres de progression :
-  - HTML : 70%
-  - CSS : 65%
-  - JavaScript : 50%
-  - Java : 60%
-  - C : 60%
+## 🎯 Objectif
 
-### 3. **Animations au chargement**
-- Les sections d'expérience s'animent avec une transition en cascade
-- Effet de fondu et translation au chargement de la page
+Développer mes compétences en développement web et en cybersécurité afin de devenir une professionnelle du numérique.
 
-## 🎨 Design
+## 🔗 Démonstration
 
-Le CV utilise une palette de couleurs professionnelle :
-- **Fond** : Gris clair (#f4f4f4)
-- **Conteneur** : Blanc avec ombre
-- **Boutons** : Bleu (#007BFF) avec effet hover
-- **Sections** : Arrondies et espacées avec barres progressives en bleu dégradé
+Vous pouvez consulter le projet en ligne via GitHub Pages :
 
-## 💻 Utilisation locale
+Ajoutez ici le lien de votre site :
 
-1. **Cloner le repository** :
-   ```bash
-   git clone https://github.com/kafatoumata169-hub/mon-cv-html.git
-   cd mon-cv-html
-   ```
+text
+https://kafatoumata169.hub/mon-cv-html
 
-2. **Ouvrir le CV** :
-   - Double-cliquez sur `index.html` ou
-   - Ouvrez le fichier dans votre navigateur préféré
 
-3. **Pas de serveur requis** : Le projet fonctionne en local sans dépendances externes
+## 📧 Contact
 
-## 📋 Contenu du CV
-
-### Formation
-- **Licence 2 Informatique** - En cours
-- **Baccalauréat scientifique** - Lycée d'Enseignement Général de Diourbel
-
-### Compétences linguistiques
-- 🇫🇷 Français : Parlé, lu, écrit
-- 🇬🇧 Anglais : Parlé, lu, écrit
-
-### Compétences professionnelles
-- Travail en équipe
-- Sens du relationnel
-- Programmation (C, Java, JavaScript)
-- Développement web (HTML, CSS, JavaScript)
-- Algorithmes et structures de données
-- Gestion de version avec Git/GitHub
-
-### Expérience
-- **Projets académiques en informatique** (2025-Présent)
-  - Développement en langage C
-  - Conception d'algorithmes
-  - Création de pages web
-  - Utilisation de Git et GitHub
-
-- **Projet personnel : CV Web Interactif** (2026)
-  - Création d'un CV numérique moderne
-  - Intégration de fonctionnalités interactives
-  - Gestion du projet avec GitHub
-
-## 📝 Notes
-
-- La photo de profil (`ma-photo.jpg`) doit être présente dans le répertoire racine
-- Le projet est responsive et s'adapte aux différentes tailles d'écran
-- Les animations sont fluides et offrent une bonne expérience utilisateur
-
-## 🔗 Lien du projet
-
-[Voir le CV sur GitHub](https://github.com/kafatoumata169-hub/mon-cv-html)
-
-## 📱 Code QR
-
-Scannez ce code QR pour accéder directement au projet :
-
-![QR Code - Mon CV HTML](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/kafatoumata169-hub/mon-cv-html)
-
-**Accès rapide :** [https://github.com/kafatoumata169-hub/mon-cv-html](https://github.com/kafatoumata169-hub/mon-cv-html)
-
-> 💡 *Utilisez votre téléphone pour scanner ce code QR et partagez facilement votre profil avec d'autres !*
-
-## 👩‍💻 Auteur
-
-**Fatoumata Ka**
-- Étudiante en Licence 2 Informatique
-- Développeuse web passionnée
+- Email : kafatoumata169@gmail.com
+- Téléphone : 76 682 02 79
+- Localisation : Diourbel, Sénégal
 
 ---
 
-*Ce CV a été créé comme projet personnel pour démontrer mes compétences en développement web.*
+© 2026 Fatoumata KA - Tous droits réservés.
