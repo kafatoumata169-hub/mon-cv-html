@@ -134,7 +134,7 @@ background-image: url("images/photo.jpg");
     height: 200px;
  .profil {
     display: flex;
-    align-items: center;
+    align-items:left;
     gap: 15px;
 
     background-color: lightblue; /* couleur de fond */
