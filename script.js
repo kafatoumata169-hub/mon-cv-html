@@ -65,7 +65,7 @@ function bonjour() {
     message.style.fontSize = "25px";
     message.style.fontWeight = "bold";
 
-}
+};
 document.addEventListener("DOMContentLoaded", () => {
     const experiences = document.querySelectorAll(".experience");
 
@@ -115,6 +115,8 @@ themeBtn.addEventListener("click", () => {
 
 });
 
+const liens = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll(".section");
 liens.forEach(lien => {
     lien.addEventListener("click", function(e) {
         e.preventDefault();
@@ -127,5 +129,34 @@ liens.forEach(lien => {
         // Afficher la section cliquée
         const cible = this.getAttribute("href");
         document.querySelector(cible).style.display = "block";
+    });
+});
+// Menu burger
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+// Cacher toutes les sections sauf Profil
+sections.forEach(section => {
+    section.style.display = "none";
+});
+
+document.getElementById("profil").style.display = "block";
+
+liens.forEach(lien => {
+    lien.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        // Cacher toutes les sections
+        sections.forEach(section => {
+            section.style.display = "none";
+        });
+
+        // Afficher la section cliquée
+        const cible = this.getAttribute("href").substring(1);
+        document.getElementById(cible).style.display = "block";
     });
 });
