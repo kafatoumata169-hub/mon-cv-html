@@ -10,15 +10,15 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 0;
+    box-shadow: 0;
 }
 
 .ma-photo {
     width: 150px;
-    border-radius: 50%;
+    border-radius: 1005;
     display: block;
-    margin: auto;
+    margin: 0;
 }
 
 h1 {
@@ -62,7 +62,7 @@ background-image: url("images/photo.jpg");
     margin-bottom: 15px;
 }
 
-.barre{
+.barre {
     width: 100%;
     height: 20px;
     background-color: #9498bb8bb;
@@ -76,27 +76,27 @@ background-image: url("images/photo.jpg");
 
 .html{
     width: 90%;
-    background-color: rgb(173, 200, 207);
+    background-color: rgb(42, 195, 233);
 }
 
 .css{
     width: 80%;
-    background-color: rgb(170, 188, 204);
+    background-color: rgb(73, 142, 202);
 }
 
 .js{
     width: 75%;
-    background-color: rgb(156, 184, 196);
+    background-color: rgb(87, 189, 233);
 }
 
 .java{
     width: 60%;
-    background-color: rgb(148, 183, 192);
+    background-color: rgb(76, 162, 184);
 }
 
 .c{
     width: 50%;
-    background-color: rgb(163, 189, 206);
+    background-color: rgb(91, 166, 216);
 }
 #experience {
     margin-top: 30px;
@@ -123,18 +123,18 @@ background-image: url("images/photo.jpg");
     padding: 15px;
     margin-top: 20px;
 }
-.profil {
+#profil {
     display: flex;
     align-items: center; /* aligne verticalement */
     gap: 15px; /* espace entre la photo et le nom */
 }
 
-.profil img {
+#profil img {
     width: 200px;
     height: 200px;
- .profil {
+ #profil {
     display: flex;
-    align-items:left;
+    align-items: center;
     gap: 15px;
 
     background-color: lightblue; /* couleur de fond */
@@ -153,7 +153,7 @@ html {
     justify-content: space-between;
     align-items: center;
     background: #2c3e50;
-    padding: 15px;
+    padding: 0;
 }
 
 .navbar h2 {
@@ -188,7 +188,7 @@ html {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
 
     #menu-btn {
         display: block;
@@ -224,7 +224,7 @@ html {
 }
 
 .sidebar{
-    width:50%;
+    width:40%;
     background:#3f4758;
     color:white;
     padding:30px;
@@ -232,11 +232,17 @@ html {
 
 
 .content{
-    width:50%;
+    width:70%;
     padding:40px;
     background:grey;
 }
 #formation{
     background-color:white ;
     align-items: center;
+}
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
