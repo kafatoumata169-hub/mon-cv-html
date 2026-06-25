@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
      <header>
@@ -20,27 +21,31 @@
         </ul>
 
         <button id="theme-btn">🌙</button>
+        <div class="photo"><img src="ma-photo.jpg" alt="ma-photo.jpg" >
+        </div>
       </nav>
-      
     </header>
     <section class="cv-container">
      <aside class="sidebar">
-        <div class="profil"><img src="ma-photo.jpg" alt="ma-photo.jpg" width="200" height="200" >
-        </div>
-        
-        <h1 class="metier">Fatoumata KA</h1>
-        <p>Développeuse web débutante</p>
+    <section>
+            <h1>Fatoumata KA</h1>
+            <h3>Étudiante en Licence Informatique</h3>
+
+            <p>Email : kafatoumata169@gmail.com</p>
+            <p>Téléphone : 76 682 02 79</p>
+            <p>Ville : Diourbel</p>
+    </section>
         <section id="profil">
             <h2>profil</h2>
-     <p> Etudiante en licence2 informatique Passionnée par  l'informatique , le développement web et la cybersécurité<br>
+     <p> Etudiante en licence2 informatique  Passionnée par  l'informatique , le développement web et la cybersécurité<br>
         </p>
-            
-            </p>
+    </section>    
+    <section>
             <h2>competances lingustiques</h2>
             <p><i>français</i> : (parler,lire,écrire) <br></p>
             <p><i>anglais</i> :  (parler,lire,ecrire)<br></p>
             <p><i>allemand</i>:  (lire)</p>
-        </section>
+    </section>
 
         <section id="competences">
             <h2>Compétences</h2>
@@ -52,6 +57,7 @@
             <br>
            sens du relationnel <br> </p>
         </section>
+
     </aside>
         <main class="content">
         <section id="formation">
@@ -85,18 +91,33 @@
         </ul>
     </div>
 </section>
-       <button onclick="bonjour()">Clique ici</button>
+<section id="contact">
+        <h2>Contact</h2>
 
+        <form id="contactForm">
+
+            <input type="text" id="nom" placeholder="Nom">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <textarea id="message" placeholder="Votre message"></textarea>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </section>
+    <section>
+       <button onclick="bonjour()">Clique ici</button>
         <p id="message"></p> 
         <!-- Bouton Retour en haut -->
       <button id="backToTop" title="Retour en haut">↑</button>
-
+    </section>
         <footer class="footer">
     <p>&copy; <mail:kafatoumata></mail:kafatoumata>kafatoumata169@gmail.com</p>
     <p id="contact">contact: 766820279</p>
 </footer>
  </main>
-    <section/>
+</section>
     <script src="script.js"></script>
 </body>
 </html>
