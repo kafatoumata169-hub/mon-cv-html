@@ -116,7 +116,7 @@ themeBtn.addEventListener("click", () => {
 });
 
 const liens = document.querySelectorAll("nav a");
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".section[id]");
 liens.forEach(lien => {
     lien.addEventListener("click", function(e) {
         e.preventDefault();
@@ -134,7 +134,7 @@ liens.forEach(lien => {
 // Menu burger
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
-
+const sections = document.querySelectorAll("section[id]");
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
